@@ -9,7 +9,7 @@ namespace Code
         {
             Console.WriteLine("\t\t\t\tAssignment - 1");
             Console.WriteLine("\t\t\t****************************");
-
+            /*
             //Implicit casting class starts here
             MyImplicitCast imp = new MyImplicitCast();
             Console.WriteLine("\t<<< Implicit Casting >>>");
@@ -61,12 +61,16 @@ namespace Code
             Console.Write("One sentence about yourself: ");
             example.sentence = Convert.ToString(Console.ReadLine());
 
-            example.PlayingWithStrings();
+            example.PlayingWithStrings();*/
+
+            //Array starts here
+            MyArray arrayExample = new MyArray();
+            arrayExample.PrintArray();
 
             Console.ReadKey();
         }
     }
-
+    /*
     class MyImplicitCast
     {
         public int age;
@@ -133,6 +137,36 @@ namespace Code
 
             this.charPos = sentence.IndexOf('M');
             Console.WriteLine("Last word of your sentence:" + this.sentence.Substring(this.charPos));
+
+        }
+    }*/
+
+    class MyArray{
+        public string[] countries = {"Bangladesh", "West-Indies", "New Zeland", "GreenLand", "Saudi Arabia", "UAE", "UK", "USA", "Oman"};
+        public double[] numbers = {23, -12, -56.67, 4.5, 13, 3.3, 66, 7.777, 4.34, 400, -52.2525, 3442341};
+
+        public void PrintArray(){
+            Console.WriteLine("  <----- String Array before sort----->");
+            for(int ptr=0; ptr<this.countries.Length; ptr++){
+                Console.WriteLine(this.countries[ptr]);
+            }
+
+            Console.WriteLine("  <----- String Array after sort----->");
+            Array.Sort(this.countries); // sorting array
+            for(int ptr=0; ptr<this.countries.Length; ptr++){
+                Console.WriteLine(this.countries[ptr]);
+            }
+
+            Console.WriteLine("  <----- Double Array before sort----->");
+            for(int ptr=0; ptr<this.numbers.Length; ptr++){
+                Console.WriteLine(this.numbers[ptr]);
+            }
+
+            Console.WriteLine("  <----- Double Array after sort----->");
+            Array.Sort(this.numbers); //sorting array
+            for(int ptr=0; ptr<this.numbers.Length; ptr++){
+                Console.WriteLine(this.numbers[ptr]);
+            }
 
         }
     }
