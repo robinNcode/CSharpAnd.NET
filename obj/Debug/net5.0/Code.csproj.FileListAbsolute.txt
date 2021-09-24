@@ -1,0 +1,16 @@
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.exe
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.deps.json
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.runtimeconfig.json
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.runtimeconfig.dev.json
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.dll
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\ref\Code.dll
+E:\Code\CSharpAnd.NET\bin\Debug\net5.0\Code.pdb
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.csproj.AssemblyReference.cache
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.AssemblyInfoInputs.cache
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.AssemblyInfo.cs
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.csproj.CoreCompileInputs.cache
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.dll
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\ref\Code.dll
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.pdb
+E:\Code\CSharpAnd.NET\obj\Debug\net5.0\Code.genruntimeconfig.cache

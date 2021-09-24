@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Code\\Code.csproj",
+      "projectUniqueName": "E:\\Code\\CSharpAnd.NET\\Code.csproj",
       "projectName": "Code",
-      "projectPath": "E:\\Code\\Code.csproj",
+      "projectPath": "E:\\Code\\CSharpAnd.NET\\Code.csproj",
       "packagesPath": "C:\\Users\\AdovaSoftRobin\\.nuget\\packages\\",
-      "outputPath": "E:\\Code\\obj\\",
+      "outputPath": "E:\\Code\\CSharpAnd.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AdovaSoftRobin\\AppData\\Roaming\\NuGet\\NuGet.Config"
