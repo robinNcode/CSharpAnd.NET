@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.IO;
+using System;
 
 namespace Code
 {
@@ -6,8 +7,8 @@ namespace Code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\t\t\t\tType Casting Assignment");
-            Console.WriteLine("\t\t\t---------------------------------------------");
+            Console.WriteLine("\t\t\t\tAssignment - 1");
+            Console.WriteLine("\t\t\t****************************");
 
             //Implicit casting class starts here
             MyImplicitCast imp = new MyImplicitCast();
@@ -25,6 +26,23 @@ namespace Code
 
             Exmp.ExmpCast();
 
+            //Type Casting Method sections starts here
+
+            MyTypeCasting test = new MyTypeCasting();
+            Console.WriteLine("\t<<< Type Casting Methods >>>");
+            Console.Write("Enter Int Value of myInt: ");
+            test.myInt = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Double Value of myDouble: ");
+            test.myDouble = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter Bool Value of myBool: ");
+            test.myBool = Convert.ToBoolean(Console.ReadLine());
+
+            test.TypePrint();
+
+
+            Console.ReadKey();
         }
     }
 
@@ -47,8 +65,22 @@ namespace Code
 
         public void ExmpCast(){
             Console.WriteLine("Double value : " + this.age);
-            this.newAge = (int)this.age; // Automatic casting: int to double
+            this.newAge = (int)this.age; //Explicit Type casting
             Console.WriteLine("Int value : " + this.newAge);
+        }
+    }
+
+    class MyTypeCasting
+    {
+        public int myInt;
+        public double myDouble;
+        public bool myBool;
+
+        public void TypePrint(){
+            Console.WriteLine(Convert.ToString(myInt));    
+            Console.WriteLine(Convert.ToDouble(myInt));    
+            Console.WriteLine(Convert.ToInt32(myDouble));  
+            Console.WriteLine(Convert.ToString(myBool));  
         }
     }
 
