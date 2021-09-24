@@ -9,7 +9,7 @@ namespace Code
         {
             Console.WriteLine("\t\t\t\tAssignment - 1");
             Console.WriteLine("\t\t\t****************************");
-            /*
+            
             //Implicit casting class starts here
             MyImplicitCast imp = new MyImplicitCast();
             Console.WriteLine("\t<<< Implicit Casting >>>");
@@ -61,16 +61,39 @@ namespace Code
             Console.Write("One sentence about yourself: ");
             example.sentence = Convert.ToString(Console.ReadLine());
 
-            example.PlayingWithStrings();*/
+            example.PlayingWithStrings();
 
             //Array starts here
+            Console.WriteLine("\t^^^^ Array Practice ^^^^");
             MyArray arrayExample = new MyArray();
             arrayExample.PrintArray();
+
+            //Method overloading examples
+            
+            Console.WriteLine("\t^^^^ Method Overloading Practice ^^^^");
+            MyMethodOverLoading testMethod = new MyMethodOverLoading();
+
+            Console.Write("Enter Int Value of number1: ");
+            int myNum1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Int Value of number2: ");
+            int myNum2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("For int value doing sum : " + testMethod.DoAsMyWish(myNum1, myNum2) + "\n");
+
+            Console.Write("Enter double Value of number1: ");
+            double myDouble1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter double Value of number2: ");
+            double myDouble2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("For double value doing multiplication : " + testMethod.DoAsMyWish(myDouble1, myDouble2));
 
             Console.ReadKey();
         }
     }
-    /*
+
+    
     class MyImplicitCast
     {
         public int age;
@@ -139,7 +162,7 @@ namespace Code
             Console.WriteLine("Last word of your sentence:" + this.sentence.Substring(this.charPos));
 
         }
-    }*/
+    }
 
     class MyArray{
         public string[] countries = {"Bangladesh", "West-Indies", "New Zeland", "GreenLand", "Saudi Arabia", "UAE", "UK", "USA", "Oman"};
@@ -168,6 +191,18 @@ namespace Code
                 Console.WriteLine(this.numbers[ptr]);
             }
 
+        }
+    }
+
+    class MyMethodOverLoading
+    {
+
+        public int DoAsMyWish(int num1, int num2){
+            return num1 + num2;
+        }
+
+        public double DoAsMyWish(double num1, double num2){
+            return num1 * num2;
         }
     }
 
